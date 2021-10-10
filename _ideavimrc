@@ -1,0 +1,45 @@
+" An example for a idea vimrc file.
+"   Mainteiner: lynch513@yandex.ru
+
+" Common settings
+set showmode
+set ignorecase
+set smartcase
+set scrolloff=3 " 3 lines above/below cursor when scrolling
+set nu
+
+" Search parameters
+set incsearch
+
+" Emulated plugins
+set surround
+set commentary
+
+" Use Idea to join lines smartly
+set ideajoin
+set idearefactormode=keep
+
+" let mapleader = " "
+
+" Use Q for formatting the current paragraph (or visual selection)
+vmap Q gq
+nmap Q gqap
+
+" Tabs
+nnoremap ]t :action NextTab<cr>
+nnoremap [t :action PreviousTab<cr>
+
+
+" Always show status bar
+"set laststatus=2
+
+" Show current line
+"set cursorline
+
+" Add empty lines
+nnoremap ]<Space> o<Esc>k
+nnoremap [<Space> O<Esc>j
+
+" Remap Esc
+inoremap jj <Esc>l
+inoremap <M-l> <Esc>l
